@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Put Bernie Anywhere!</title>
-</head>
-<body>
-    <title>
-        Put Bernie Anywhere In The World!
-    </title>
-    <h1> Enter an address or location and bernie will appear there. </h1>
-<!--     <img id='bern' src='/bernie.png'> -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Metti Bersani ovunque!</title>
+  </head>
+  <body>
+    <title>Metti Bersani in qualunque posto del mondo!</title>
+    <h1>Inserisci un indirizzo o una località e Bersani comparirà lì.</h1>
+    <!--     <img id='bern' src='/bernie.png'> -->
     <form action="" method="post">
-        <p>
-            <label for="address/location">Address/Location</label>
-            <input type="text" name="address/location">
-        </p>
-        <p>
-            <input type="submit">
-        </p>
+      <p>
+        <label for="address/location">Indirizzo/Località</label>
+        <input type="text" name="address/location" />
+      </p>
+      <p>
+        <input type="submit" />
+      </p>
     </form>
     {% if location %}
-    <p> Bernie at {{ location }}: </p>
-    {% endif %}
-    {% if image %}
-    <img id="picture" src="data:image/jpeg;base64,{{ image }}">
+    <p>Bersani a {{ location }}:</p>
+    {% endif %} {% if image %}
+    <img id="picture" src="data:image/jpeg;base64,{{ image }}" />
     {% endif %}
     <!-- <img src="data:image/jpg;base64, {{ image }}"> -->
-<!--     <img src= {{ image }}>
+    <!--     <img src= {{ image }}>
 
  -->
-    <p> <i> a site by Nick Sawhney <a href="https://twitter.com/nick_sawhney" target="_blank"> @nick_sawhney </a></i> <p>
-</body>
+    <p>
+      <i>
+        un sito di Nick Sawhney
+        <a href="https://twitter.com/nick_sawhney" target="_blank"
+          >@nick_sawhney</a
+        >, leggermente modificato da
+        <a href="https://cedmax.com" target="_blank">cedmax</a></i
+      >
+    </p>
+    <p></p>
+  </body>
 </html>

@@ -7,7 +7,7 @@ from sign import sign_url
 import os
 # from config import *
 
-BERNIE = cv2.imread('bernie.png', -1)
+BERNIE = cv2.imread('bersani.png', -1)
 
 API_URL = os.environ['API_URL']
 KEY = os.environ['KEY']
@@ -44,7 +44,7 @@ def add_bernie(img_bytes):
 	l_img = np.asarray(bytearray(img_bytes), dtype='uint8')
 	l_img = cv2.imdecode(l_img, cv2.IMREAD_COLOR)
 
-	y_offset = 330
+	y_offset = 300
 	x_offset = 400
 
 	s_img = BERNIE
